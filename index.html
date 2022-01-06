@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halo Fifik</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body>
+	<div class="page1" >
+		<div class="center-content">
+			<h3><b>Hai, hari yang spesial</b></h3>
+			<div>
+				<i>mari nikmati setiap jengkal web ini</i>
+			</div>
+		</div>
+		<div class="sliding">
+				<span >tekan ke bawah</span>
+				<br/>
+				<a id="btn-slide">
+					<i class="fa fa-2x fa-angle-double-down"></i>
+				</a>
+		</div>
+	</div>
+
+	<div class="page2" style="display: none;">
+		<div class="center-page2">
+			<div class="form-group">
+				<h5 class="pos-center">coba tulis nama kamu disini</h5>
+					<input id="nametxt" name="nametxt" class="form-control form-control-lg" type="text" placeholder="Namamu yaa" required>
+			</div>
+			<div class="form-group">
+				<input id="btn-name" type="submit" class="form-control form-control-lg btn btn-outline-info" disabled> 
+			</div>
+		</div>
+	</div>	
+
+	<div class="page3" style="display: none;">
+		<div class="center-content">		
+			<h1 id="name-display"></h1>
+			<span >benar benar indah namamu</span>
+		</div>
+
+			<div class="sliding">
+					<span >tekan ke bawah</span>
+					<br/>
+					<a id="btn-slide2">
+						<i class="fa fa-2x fa-angle-double-down"></i>
+					</a>
+			</div>
+	</div>
+
+	<div class="page4" style="display: none;">
+		<div class="center-content">		
+			<h4>kamu mau lanjut ga ?</h4>
+			<div>
+				<button id="btn-iya" class="btn btn-lg btn-success"> IYA </button>
+				<a href="#ex1" rel="modal:open" class="btn btn-lg btn-danger"> GA </a>
+			</div>
+
+			<div id="ex1" class="modal" align="center">
+				<h3 style="text-align: center;">MAAF</h3>
+			  <p style="text-align: center;">Tapi keadaan memaksamu untuk tetap lanjut</p>
+			  <a id="btn-lanjut" class="btn btn-lg btn-info btn-block" href="#" rel="modal:close">LANJUT</a>
+			</div>
+		</div>
+	</div>	
+
+
+	<div align="center" class="page5" style="display: none;">
+		<div class="center-content">
+
+			<h4>
+				Kita play musik dulu ya
+			</h4>
+			<audio id="music-play">
+			  <source src="assets/song/song.mp3" type="audio/mpeg">
+			</audio>
+			<div>
+				<h4>
+					<!-- <button id="btn-play" type="button" class="btn btn-primary btn-lg"><i class="fa fa-play"></i></button> -->
+					<a id="btn-play" type="button" class="btn btn-primary btn-lg"><i class="fa fa-play"></i></a>
+				</h4>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
